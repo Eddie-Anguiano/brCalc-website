@@ -1,0 +1,15 @@
+body {
+  font-family: $font-family--primary;
+  color: $color-grey;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 18px;
+  color: $color-blue;
+}
+
+.dollar,
+input {
+  color: $color-blue;
+}

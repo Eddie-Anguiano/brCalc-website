@@ -1,0 +1,172 @@
+body {
+  background-color: $color-off-white;
+}
+
+input {
+  background-color: $color-off-white;
+  max-width: 80px;
+}
+
+.dollar,
+.icons {
+  margin-right: 15px;
+  padding-left: $padding-left;
+  height: 16px;
+}
+
+.icons-trash {
+  height: 16px;
+}
+
+// Input
+
+.input {
+  flex: 1;
+  margin-right: 30px;
+
+  &__container,
+  &__optional-container {
+    width: 100%;
+    @extend %neu-down;
+    padding: $padding-large;
+    border-radius: 10px;
+  }
+
+  &__label {
+    display: block;
+    padding-bottom: 7px;
+    padding-left: $padding-left;
+  }
+
+  &__sub-container {
+    display: flex;
+    align-items: center;
+    background-color: $color-off-white;
+    @extend %neu-up;
+    border-radius: 100px;
+    height: 41px;
+    width: 100%;
+  }
+
+  &__sub-container:not(:last-child) {
+    margin-bottom: $padding-row-bottom;
+  }
+
+  &__two {
+    max-width: 20px;
+  }
+
+  &__semicolon {
+    margin-right: 10px;
+  }
+}
+
+// Output
+
+.output {
+  flex: 3;
+  &__container {
+    width: 100%;
+    @extend %neu-down;
+    padding: $padding-large;
+    border-radius: 10px;
+  }
+
+  &__container-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+}
+
+.dynamic {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 41px;
+  grid-gap: 10px 10px;
+  margin-top: 15px;
+  height: 41px;
+  border-radius: 100px;
+  overflow: hidden;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    padding-left: $padding-left;
+    padding-right: $padding-left;
+  }
+
+  &-wrapper {
+    position: relative;
+  }
+
+  &__size-label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__results {
+    margin-left: 15px;
+    color: $color-blue;
+  }
+}
+
+.expand {
+  animation: expand 0.1s linear forwards;
+}
+
+.contract {
+  animation: contract 0.1s linear reverse forwards;
+}
+
+.dynamic__triangle.rotate {
+  transform: rotate(0deg) translateY(0px);
+}
+
+@keyframes expand {
+  0% {
+    border-radius: 100px;
+    height: 41px;
+  }
+  30% {
+    border-radius: 10px;
+  }
+  100% {
+    height: 197px;
+    border-radius: 10px;
+  }
+}
+
+@keyframes contract {
+  0% {
+    border-radius: 100px;
+    height: 41px;
+  }
+  40% {
+    border-radius: 10px;
+  }
+  100% {
+    height: 197px;
+    border-radius: 10px;
+  }
+}
+
+.dynamic > div {
+  @extend %neu-down;
+}
+
+.dynamic > div:not(:first-child) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dynamic > div:nth-child(-n + 3) {
+  color: $color-off-white;
+  @include neu-button($color-blue);
+  background-color: $color-blue;
+}
+
+.--border-red {
+  border: 2px solid red;
+}

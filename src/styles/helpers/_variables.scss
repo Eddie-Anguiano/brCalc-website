@@ -1,7 +1,7 @@
 // Font Stacks
-// $font-url--google: 'https://fonts.googleapis.com/css?family=Lato:300i,400|Raleway:300i,400,600,700&display=swap';
+$font-url--google: "https://fonts.googleapis.com/css?family=Lato:400,700&display=swap";
 
-// $font-family--primary: 'Lato', sans-serif, Helvetica, Arial;
+$font-family--primary: "Lato", sans-serif, Helvetica, Arial;
 // $font-family--secondary: 'Raleway', sans-serif, Helvetica, Arial;
 
 //Font weights
@@ -18,14 +18,23 @@
 //Colors
 $color-white: #fff;
 $color-black: rgb(44, 44, 44);
+$color-off-white: #ecf0f3;
+$color-grey: #707681;
+$color-blue: #3d7dad;
+$color-shadow-grey: #b8bfcc;
 
 //Text
 $base__font-size: 16px;
-$base__line: 24px;
-$base__word-spacing: 3px;
+// $base__line: 24px;
+// $base__word-spacing: 3px;
 
 //images
-$img-path: '../images';
+$img-path: "../images";
 
 //Border Radius
 // $border-radius--small: 4px;
+
+// Padding
+$padding-large: 40px;
+$padding-row-bottom: 20px;
+$padding-left: 20px;

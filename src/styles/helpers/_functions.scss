@@ -3,6 +3,11 @@
   @return ($target / $context) * 1em;
 }
 
+// Calculate rem values
+@function rem($target, $context: $base__font-size) {
+  @return ($target / $context) * 1rem;
+}
+
 // Typography
 
 @if variable-exists(font-url--google) {

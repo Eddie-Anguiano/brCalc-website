@@ -1,0 +1,18 @@
+.tri-btn {
+  width: 100px;
+
+  &__container {
+    @extend %center;
+    margin-bottom: $padding-row-bottom;
+  }
+}
+
+.dynamic__triangle {
+  height: 20px;
+  width: 20px;
+  transform: rotate(-90deg) translateY(-5px);
+  z-index: 1000;
+  text-align: left;
+  margin-right: 10px;
+  transition: 0.1s linear;
+}

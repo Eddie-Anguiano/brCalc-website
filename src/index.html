@@ -6,5 +6,169 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <!-- input section -->
+      <section class="input">
+        <!-- heading -->
+        <h1 class="input__heading">Br Checkout</h1>
+
+        <!-- inputs -->
+        <div class="input__container">
+          <label class="input__label" for="input__total-sales"
+            >Total Sales</label
+          >
+          <div class="input__sub-container">
+            <span class="dollar">$</span>
+            <input class="input__input" type="text" id="input__total-sales" />
+          </div>
+
+          <label class="input__label" for="input__credit-sales"
+            >Credit Card Tips</label
+          >
+          <div class="input__sub-container">
+            <span class="dollar">$</span>
+            <input class="input__input" type="text" id="input__credit-tips" />
+          </div>
+        </div>
+
+        <!-- optional -->
+        <h1 class="input__heading">(optional)</h1>
+        <div class="input__optional-container">
+          <label class="input__label" for="input__mdr"
+            >Main Dining Room Tips</label
+          >
+          <div class="input__sub-container">
+            <span class="dollar">$</span>
+            <input
+              class="input__input"
+              type="text"
+              id="input__mdr"
+              placeholder="0"
+            />
+          </div>
+
+          <label class="input__label" for="input__cash-tips">Cash Tips</label>
+          <div class="input__sub-container">
+            <span class="dollar">$</span>
+            <input
+              class="input__input"
+              type="text"
+              id="input__cash-tips"
+              placeholder="0"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- groups -->
+      <section class="output">
+        <h1>Groups</h1>
+        <div class="output__container">
+          <div class="output__container-top">
+            <!-- group inputs -->
+            <label class="input__label" for="input__name">Name</label>
+            <label class="input__label" for="input__time">Time Worked</label>
+            <label class="input__label" for="input__size">Group Size</label>
+
+            <!-- inputs -->
+            <div class="input__sub-container">
+              <img src="images/users.svg" class="icons" alt="name icon" />
+              <input class="input__input" type="text" id="input__name" />
+            </div>
+
+            <div class="input__sub-container">
+              <img src="images/clock.svg" class="icons" alt="clock icon" />
+              <input
+                class="input__two"
+                type="text"
+                id="input__time-hours"
+                placeholder="0"
+              />
+              <span class="input__semicolon">:</span>
+              <input
+                class="input__two"
+                type="text"
+                id="input__time-minutes"
+                placeholder="00"
+              />
+            </div>
+
+            <div class="input__sub-container">
+              <img src="images/hash.svg" class="icons" alt="hash icon" />
+              <input class="input__input" type="text" id="input__size" />
+            </div>
+
+            <!-- add group button -->
+            <div class="empty"></div>
+            <div class="tri-btn__container">
+              <img
+                src="images/tri-btn.svg"
+                class="tri-btn"
+                alt="submit button"
+              />
+            </div>
+            <div class="empty"></div>
+
+            <div class="sudo-label input__label">Name</div>
+            <div class="sudo-label input__label">Time Worked</div>
+            <div class="sudo-label input__label">Group Size</div>
+          </div>
+
+          <!-- container bottom -->
+          <div class="dynamic-wrapper">
+            <!-- <div class="dynamic">
+              <div class="dynamic__name-label">
+                <img
+                  class="dynamic__triangle"
+                  src="images/tri-btn.svg"
+                  alt=""
+                />${item.name}
+              </div>
+              <div class="dynamic__time-label">${item.hours}</div>
+              <div class="dynamic__size-label">
+                ${item.size}<img
+                  src="images/trash-2.svg"
+                  class="icons"
+                  alt="trash icon"
+                  id="${item.name}"
+                />
+              </div>
+              <div class="dynamic__sales">
+                Sales: <span class="dynamic__results">${item.sales}</span>
+              </div>
+              <div class="dynamic__cc-tips">
+                Credit Card Tips:
+                <span class="dynamic__results">${item.creditCardTips}</span>
+              </div>
+              <div class="dynamic__cash">
+                Cash Tips:
+                <span class="dynamic__results">${item.cashTips}</span>
+              </div>
+              <div class="dynamic__claimed">
+                Claimed Tips:
+                <span class="dynamic__results">${item.claimedTips}</span>
+              </div>
+              <div class="dynamic__busser">
+                Busser Tip Out:
+                <span class="dynamic__results">${item.busserTips}</span>
+              </div>
+              <div class="dynamic__bar">
+                Bar Tip Out:
+                <span class="dynamic__results">${item.barTips}</span>
+              </div>
+              <div class="dynamic__runner">
+                Runner Tip Out:
+                <span class="dynamic__results">${item.runnerTips}</span>
+              </div>
+              <div class="dynamic__total-tip">
+                Total Tip Out:
+                <span class="dynamic__results">${item.totalTipOut}</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
